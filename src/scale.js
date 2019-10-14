@@ -30,4 +30,11 @@ export class Scale {
       return this._allScales[offsetIndex];
     })
   }
+  getMinorHarmonic() {
+    const minorHarmonicFormula = [0, 2, 3, 5, 7, 8, 11];
+    return minorHarmonicFormula.map(item => {
+      const offsetIndex = (item + this._calcScaleOffset(this.in_scale))%12;
+      return this._allScales[offsetIndex];
+    })
+  }
 }

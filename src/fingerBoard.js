@@ -14,6 +14,9 @@ export class FingerBoard {
       case 'MinorNatural':
         this._scaleNotes = this._scale.getMinorNatural();
         break;
+      case 'MinorHarmonic':
+        this._scaleNotes = this._scale.getMinorHarmonic();
+        break;
     }
 
     this._createCanvas();
