@@ -21,8 +21,6 @@ export class FingerBoard {
 
     this._createCanvas();
 
-    //test
-    //console.log(this.getNotePositions());
   }
 
   getNotePositions() {
@@ -65,12 +63,12 @@ export class FingerBoard {
     this._canvas.width = 500;
     this._canvas.height = 500;
     const ctx = this._canvas.getContext('2d');
-    const startX = 100;
-    const startY = 100;
+    const startX = 20;
+    const startY = 50;
     const hSpacing = 40;
     const vSpacing = 50
 
-    this._drawLine(startX, startY, 100, 400, ctx)
+    this._drawLine(startX, startY, startX, 400, ctx)
     this._drawLine(startX + hSpacing, startY, startX + hSpacing, 400, ctx)
     this._drawLine(startX + 2 * hSpacing, startY, startX + 2 * hSpacing, 400, ctx)
     this._drawLine(startX + 3 * hSpacing, startY, startX + 3 * hSpacing, 400, ctx)
@@ -113,12 +111,6 @@ export class FingerBoard {
       }
     }
 
-
-    fingerboardAllPositionsShadow[0].forEach((isOccupied, index) => {
-      if (isOccupied === 1) {
-        console.log('draw circle on: ', index)
-      }
-    })
   }
 
   _drawLine(x1, y1, x2, y2, ctx) {
@@ -166,7 +158,6 @@ export class FingerBoard {
     }
 
 
-    console.log(fingerboardAllPositions)
 
     return {
       fingerboardAllPositions,
