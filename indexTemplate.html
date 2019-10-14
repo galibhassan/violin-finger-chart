@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        violin-finger-chart
+    </title>
+</head>
+
+<body>
+    <h1>Violin Finger Chart</h1>
+    <hr>
+    <p> Give it a scale and walah!</p>
+
+    <div id="appContainer">
+
+
+        <div id="ui">
+            <select name="scaleSelect" id="scaleFromUser">
+                <option value="C">C</option>
+                <option value="Cs">C#</option>
+                <option value="D">D</option>
+                <option value="Ef">Eb</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="Fs">F#</option>
+                <option value="G">G</option>
+                <option value="Gs">G#</option>
+                <option value="A">A</option>
+                <option value="Bf">Bb</option>
+                <option value="B">B</option>
+
+            </select>
+            <select id="scaleModeFromUser">
+                <option value="Major">Major</option>
+                <option value="MinorNatural">Natural Minor</option>
+            </select>
+        </div>
+        <div id="canvasContainer">
+            <canvas id="canvas_FingerBoard"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
