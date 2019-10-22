@@ -1,9 +1,9 @@
 body {
     font-family: sans-serif;
     background: rgba(245, 245, 241, 0.349);
-    margin: 80px;
-
 }
 
-
-
+#appContainer{
+    margin: auto;
+    width: 30%;
+}
