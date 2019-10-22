@@ -49,7 +49,10 @@ export class FingerBoard {
     for (let i = 0; i < stringNotes.length; i++) {
       for (let j = 0; j < this._scaleNotes.length; j++) {
         if (stringNotes[i] === this._scaleNotes[j]) {
-          stringOccupancy.push(i)
+          stringOccupancy.push(i);
+          if(stringNotes[i] === this.in_scale) {
+            console.log(this.in_scale, i, j)
+          }
         }
       }
     }
